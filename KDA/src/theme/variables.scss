@@ -38,7 +38,9 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  kd-blue:    #488AFF,
+  kd-blue-light:   #edf4ff
 );
 
 
@@ -46,13 +48,14 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+//$searchbar-ios-input-background-color: color($colors,kd-blue);
 
-
+$searchbar-ios-background-color	: color($colors,kd-blue);
+$background-ios-color: color($colors,kd-blue-light);
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
 
 
 
