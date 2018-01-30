@@ -9,23 +9,60 @@
 
 <ion-content padding >
 
-<h3>Kiddies Learning Application</h3>
 
-<ion-searchbar
-  [(ngModel)]="myInput"
-  [showCancelButton]="shouldShowCancel"
-  (ionInput)="onInput($event)"
-  (ionCancel)="onCancel($event)">
-</ion-searchbar>
 
-<div class="d-flex flex-row  align-content-stretch">
-  <div class="p-2">
-    <ion-card class="home_thumb_main">
-      <img src="assets/imgs/thumb_nursury_rhyme.png" class="img-fluid" alt="Responsive image">
-    </ion-card>    
-  </div>
+<style type="text/css">
+  menu{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50%50%;
+    padding-left: 0px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 100vh;
+  }
+
+</style>
+
+
+
+
+
+<div class="container">
+  <header>
+    <h3>Kiddies Learning Application</h3>
+    <!--
+    <ion-searchbar
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+    -->
+  </header>
+  <main>
+    <menu>
+      <menuitem>
+        <img class="img-responsive" src="assets/imgs/thumb_nursury_rhyme.png" >
+      </menuitem>
+      <menuitem>
+       <img class="img-responsive" src="assets/imgs/thumb_nursury_rhyme.png" >
+      </menuitem>
+      <menuitem>
+        <img class="img-responsive" src="assets/imgs/thumb_nursury_rhyme.png" >
+      </menuitem>
+      <menuitem>
+        <img class="img-responsive" src="assets/imgs/thumb_nursury_rhyme.png" >
+      </menuitem>
+    </menu>    
+  </main>
+  <footer>FOOTER</footer>
 </div>
-fdfdf
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+
+
+
 </ion-content>
